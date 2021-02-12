@@ -80,8 +80,12 @@ WSGI_APPLICATION = 'gamesapi.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'games',
+        'USER': 'vinip',
+        'PASSWORD': 'Platinum123',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
