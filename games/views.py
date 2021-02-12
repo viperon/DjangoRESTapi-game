@@ -20,6 +20,7 @@ def game_list(request):
             return Response(game_serializer.data, status=status.HTTP_201_CREATED)
         return Response(game_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+
 @api_view(['GET', 'PUT', 'POST'])
 def game_detail(request, pk):
     try:
